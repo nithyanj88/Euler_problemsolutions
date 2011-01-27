@@ -1,13 +1,9 @@
 
 public class NumberRange {
 
-	public   static void main(String[] args) throws Exception{
-		long sum = new NumberRange().sumOfPrimeNumbers(2000000);
-		System.out.println(sum);
-	}
 	
 	public long sumOfPrimeNumbers(long range){
-		long sumOfNmuners = 0;
+		long sumOfNumbers = 0;
 		
 		for (long i=1; i <range; i++ )
 		{
@@ -20,11 +16,11 @@ public class NumberRange {
 			}
 			if(i == j){
 				System.out.println("  "+i);
-				sumOfNmuners = sumOfNmuners+i;
+				sumOfNumbers = sumOfNumbers+i;
 			}
 
 		}
-		return sumOfNmuners;
+		return sumOfNumbers;
 		
 	}
 }
