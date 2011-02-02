@@ -5,11 +5,11 @@ public class Primenumbers {
 		 int count = 0;
 		 int number = 0;
 		 int primeNumber = 0;
-		 int range = 10000000;
+		 int numberrange = 10000000;
 		 boolean isNotPrime = false;
 
 		 
-		 for(int i =2 ; i<range ; i++){
+		 for(int i =2 ; i<numberrange ; i++){
 		 isNotPrime = isPrime(isNotPrime, i);
 		 if(!isNotPrime){
 		 number =i;
@@ -26,14 +26,14 @@ public class Primenumbers {
 		 }
 
 
-		 private static boolean isPrime(boolean flag, int i) {
+		 private static boolean isPrime(boolean value, int i) {
 		 for(int j =2 ; j< i ; j++){
 		 if(i%j == 0)
-		 flag =true;
+		 value =true;
 
 
 		 }
-		 return flag;
+		 return value;
 		 }
 		 public static void main(String[] args) {
 			int num = new Primenumbers().getTheRequiredPrimeNumber(10001);
